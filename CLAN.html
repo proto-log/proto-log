@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CLAN</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Glitch&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            a,a:link,a:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+            li {
+                list-style: none;
+            }
+            .container {
+                width: 1140px;
+                margin: 0 auto;
+                border-top: 1px solid #01f7fa;
+                border-bottom: 1px solid #ff0dff;
+                padding-right: 1rem;
+            }
+            .aaaaa {
+                width: 1536.4000px;
+                margin: 0 auto;
+                margin-left: 0px;
+                margin-right: 0px;
+                font-family: 'Press Start 2P';
+            }
+            header {
+                position: fixed;
+                color: #fff;
+                top: 0;
+                z-index: 1;
+                width: 100%;
+                background-color: #222;
+            }
+            header .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                padding: 10px;
+            }
+            header nav ul {
+                display: flex;
+            }
+            header nav ul li {
+                padding: 15px;
+            }
+            header button {
+                background: transparent;
+                border: 0;
+                cursor: pointer;
+            }
+            header button h1 {
+                font-size: 2rem;
+                font-weight: bold;
+                color: #fff;
+                font-family: 'Press Start 2P';
+                font-variant: small-caps;
+            }
+            header nav ul li button {
+                font-size: 1.2rem;
+                color: #fff;
+            }
+            .mega-dropdown {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                background-color: #222;
+                border-bottom: 0px solid #ff0dff;
+                transition: height 0.3s ease, border-bottom 0.1s ease;
+            }
+            header .container:hover .mega-dropdown {
+                height: 130px;
+                border-bottom: 2px solid #01f7fa;
+            }
+            .mega-content {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                padding-top: 6px;
+            }
+            .sub-menu-group {
+                display: flex;
+                flex-direction: column;
+                width: 160px;
+                text-align: center;
+                margin-right: 60px;
+            }
+            .sub-menu-group li button {
+                width: 100%;
+                padding: 6px 0;
+                font-size: 0.9rem;
+                color: #aaa;
+            }
+            .sub-menu-group li button:hover {
+                color: #01f7fa;
+            }#CLAN {
+                color: #ff0dff;
+            }
+            #CLAN:hover {
+                color: #9a0a9a;
+            }
+            main {
+                width: 100%;
+                height: 100vh;
+                color: #fff;
+                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('proto-log.png') center center;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            #asdfg {
+                margin: 0px;
+                padding-top: 20px;
+            }
+            #tc1 {
+                color: #ff0dff;
+            }
+            #tc2 {
+                color: #01f7fa;
+            }
+            #b1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #b1 h1 {
+                display: flex;
+                align-items: baseline;
+                margin: 0;
+                white-space: nowrap;
+            }
+            #b1 p {
+                display: inline;
+                margin: 0;
+            }
+            header button:hover {
+                color: #01f7fa;
+            }
+            #introduction {
+                width: 120px; 
+                margin-right:0;
+            }
+            #memberList {
+                width: 133px; 
+                margin-right: 0px;
+            }
+            #games {
+                width: 90px; 
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <button id="b1" onclick="location.href='index.html'">
+                    <h1>&nbsp;Team&nbsp;<p id="tc1">P</p>roto-<p id="tc2">L</p>og</h1>
+                </button>
+                <nav>
+                    <ul>
+                        <li>
+                            <button onclick="location.href='introduction.html'">
+                                introduction
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="location.href='member list.html'" id="mlb">
+                                member list
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="location.href='games.html'" id="game">
+                               games
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mega-dropdown">
+                    <div class="mega-content">
+                        <ul class="sub-menu-group" id="introduction">
+                            <li>
+                                <!--항목1-->
+                            </li>
+                        </ul>
+                        <ul class="sub-menu-group" id="memberList">
+                            <li>
+                                <button onclick="location.href='CLAN.html'" id="CLAN">
+                                    CLAN
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='applogrammer.html'" id="applogrammer">
+                                    applogrammer
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='BAMTOL.html'" id="BAMTOL">
+                                    BAMTOL
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='pinkpigminggi.html'" id="pinkpigminggi">
+                                    pinkpigminggi
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="sub-menu-group" id="games">
+                            <li>
+                                <button onclick="window.open('https:/\/www.roblox.com/ko/games/125635215931063/retro-tower')">
+                                    Retro tower
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='game2.html'">
+                                    <!--게임2-->
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>CLAN</h1>
+        </main>
+    </body>
+</html>
