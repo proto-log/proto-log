@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>applogrammer</title>
+        <title>CLAN</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Glitch&display=swap');
             * {
@@ -69,9 +69,6 @@
                 font-size: 1.2rem;
                 color: #fff;
             }
-            #headerZ-index{
-                z-index: 2;
-            }
             .mega-dropdown {
                 position: absolute;
                 top: 100%;
@@ -98,6 +95,7 @@
                 flex-direction: column;
                 width: 160px;
                 text-align: center;
+                margin-right: 60px;
             }
             .sub-menu-group li button {
                 width: 100%;
@@ -107,8 +105,7 @@
             }
             .sub-menu-group li button:hover {
                 color: #01f7fa;
-            }
-            #applogrammer {
+            }#applogrammer {
                 color: #ff0dff;
             }
             #applogrammer:hover {
@@ -118,7 +115,7 @@
                 width: 100%;
                 height: 100vh;
                 color: #fff;
-                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('proto-log.png') center center;
+                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../proto-log.png') center center;
                 background-size: cover;
                 display: flex;
                 justify-content: center;
@@ -165,27 +162,90 @@
                 width: 90px; 
                 margin-right: 5px;
             }
+            .profile {
+                width: 100%;
+                padding: 30px 20px;
+            }
+            .profile h1 {
+                font-size: 3rem;
+                margin-bottom: 20px;
+                text-shadow: 3px 3px #ff0dff;
+            }
+
+            .profile h2 {
+                color: #01f7fa;
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+            }
+
+            .profile-description {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+
+            .profile-skills {
+                color: #ccc;
+                font-size: 0.95rem;
+            }
+            .profile-buttons {
+                margin-top: 30px;
+            }
+
+            .profile-buttons button {
+                padding: 15px 20px;
+                border: 2px solid #01f7fa;
+                background: transparent;
+                color: #01f7fa;
+                font-family: 'Press Start 2P';
+                font-size: 10px;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+
+            .profile-buttons button:hover {
+                background: #01f7fa;
+                color: #222;
+                box-shadow: 0 0 15px #01f7fa;
+            }
+            .profile-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .profile-buttons .about-button {
+                border-color: #ff0dff;
+                color: #ff0dff;
+            }
+
+            .profile-buttons .about-button:hover {
+                background: #ff0dff;
+                color: #222;
+                box-shadow: 0 0 15px #ff0dff;
+            }
         </style>
     </head>
     <body>
         <header>
-            <div class="container" id="headerZ-index">
-                <button id="b1" onclick="location.href='index.html'">
+            <div class="container">
+                <button id="b1" onclick="location.href='../index.html'">
                     <h1>&nbsp;Team&nbsp;<p id="tc1">P</p>roto-<p id="tc2">L</p>og</h1>
                 </button>
                 <nav>
                     <ul>
                         <li>
-                            <button onclick="location.href='introduction.html'">
+                            <button onclick="location.href='../introduction.html'">
                                 introduction
                             </button>
                         </li>
                         <li>
-                            <button onclick="location.href='member list.html'" id="mlb">
+                            <button onclick="location.href='../member list.html'" id="mlb">
                                 member list
                             </button>
+                        </li>
                         <li>
-                            <button onclick="location.href='games.html'" id="game">
+                            <button onclick="location.href='../games.html'" id="game">
                                games
                             </button>
                         </li>
@@ -200,29 +260,29 @@
                         </ul>
                         <ul class="sub-menu-group" id="memberList">
                             <li>
-                                <button onclick="location.href='CLAN.html'">
-                                    CLAN
-                                </button>
-                            </li>
-                            <li>
                                 <button onclick="location.href='applogrammer.html'" id="applogrammer">
                                     applogrammer
                                 </button>
                             </li>
                             <li>
-                                <button onclick="location.href='BAMTOL.html'">
+                                <button onclick="location.href='CLAN.html'" id="CLAN">
+                                    CLAN
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='BAMTOL.html'" id="BAMTOL">
                                     BAMTOL
                                 </button>
                             </li>
                             <li>
-                                <button onclick="location.href='happy.html'">
+                                <button onclick="location.href='happy.html'" id="happy">
                                     happy
                                 </button>
                             </li>
                         </ul>
                         <ul class="sub-menu-group" id="games">
                             <li>
-                                <button onclick="location.href='retro-tower.html'">
+                                <button onclick="location.href='games/retro-tower.html'">
                                     Retro tower
                                 </button>
                             </li>
@@ -236,8 +296,31 @@
                 </div>
             </div>
         </header>
-        <main>
-            <h1>applogrammer</h1>
+        <main id="main">
+            <div class="profile">
+
+                <h1>applogrammer</h1>
+
+                <h2>ROBLOX GAME DEVELOPER</h2>
+
+                <p class="profile-description">
+                    Leader of TEAM proto-log
+                </p>
+
+                 <p class="profile-skills">
+                    Python · C · Luau · HTML/CSS
+                </p>
+
+                <div class="profile-buttons">
+                    <button onclick="location.href='games.html'">
+                        VIEW PROJECTS
+                    </button>
+
+                    <button onclick="location.href='introduction.html'" class="about-button">
+                        ABOUT ME
+                    </button>
+                </div>
+            </div>
         </main>
     </body>
 </html>

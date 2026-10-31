@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Retro-tower</title>
+        <title>CLAN</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Glitch&display=swap');
             * {
@@ -19,11 +19,11 @@
                 list-style: none;
             }
             .container {
-                    width: 1140px;
-                    margin: 0 auto;
-                    border-top: 1px solid #01f7fa;
-                    border-bottom: 1px solid #ff0dff;
-                    padding-right: 1rem;
+                width: 1140px;
+                margin: 0 auto;
+                border-top: 1px solid #01f7fa;
+                border-bottom: 1px solid #ff0dff;
+                padding-right: 1rem;
             }
             .aaaaa {
                 width: 1536.4000px;
@@ -31,7 +31,7 @@
                 margin-left: 0px;
                 margin-right: 0px;
                 font-family: 'Press Start 2P';
-                }
+            }
             header {
                 position: fixed;
                 color: #fff;
@@ -69,40 +69,6 @@
                 font-size: 1.2rem;
                 color: #fff;
             }
-            #asdfg {
-                margin: 0px;
-                padding-top: 20px;
-            }
-            #tc1 {
-                color: #ff0dff;
-            }
-            #tc2 {
-                color: #01f7fa;
-            }
-            #b1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            #b1 h1 {
-                display: flex;
-                align-items: baseline;
-                margin: 0;
-                white-space: nowrap;
-            }
-            #b1 p {
-                display: inline;
-                margin: 0;
-            }
-            header button:hover {
-                color: #01f7fa;
-            }
-            #ppap {
-                color: #ff0dff;
-            }
-            #ppap:hover {
-                color: #9a0a9a;
-            }
             .mega-dropdown {
                 position: absolute;
                 top: 100%;
@@ -139,33 +105,50 @@
             }
             .sub-menu-group li button:hover {
                 color: #01f7fa;
+            }#CLAN {
+                color: #ff0dff;
+            }
+            #CLAN:hover {
+                color: #9a0a9a;
             }
             main {
                 width: 100%;
                 height: 100vh;
                 color: #fff;
-                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('proto-log1.png') center center;
+                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../proto-log.png') center center;
                 background-size: cover;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
             }
-            main div h1 {
-                font-family: 'Press Start 2P';
+            #asdfg {
+                margin: 0px;
+                padding-top: 20px;
             }
-            #pl {
-                width: 200px;
-                height: 200px;
-                margin-bottom: 20px;
-                border: 2px solid #fff;
+            #tc1 {
+                color: #ff0dff;
             }
-            #ap {
-                text-decoration: underline;
+            #tc2 {
+                color: #01f7fa;
             }
-            .bbbbb {
-                font-size: 19px;
-                color : #819eb8;
+            #b1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #b1 h1 {
+                display: flex;
+                align-items: baseline;
+                margin: 0;
+                white-space: nowrap;
+            }
+            #b1 p {
+                display: inline;
+                margin: 0;
+            }
+            header button:hover {
+                color: #01f7fa;
             }
             #introduction {
                 width: 120px; 
@@ -184,23 +167,23 @@
     <body>
         <header>
             <div class="container">
-                <button id="b1" onclick="location.href='index.html'">
+                <button id="b1" onclick="location.href='../index.html'">
                     <h1>&nbsp;Team&nbsp;<p id="tc1">P</p>roto-<p id="tc2">L</p>og</h1>
                 </button>
                 <nav>
                     <ul>
                         <li>
-                            <button id="ppap" onclick="location.href='introduction.html'">
+                            <button onclick="location.href='../introduction.html'">
                                 introduction
                             </button>
                         </li>
                         <li>
-                            <button onclick="location.href='member list.html'">
+                            <button onclick="location.href='../member list.html'" id="mlb">
                                 member list
                             </button>
                         </li>
                         <li>
-                            <button onclick="location.href='games.html'" id="game">
+                            <button onclick="location.href='../games.html'" id="game">
                                games
                             </button>
                         </li>
@@ -215,29 +198,29 @@
                         </ul>
                         <ul class="sub-menu-group" id="memberList">
                             <li>
-                                <button onclick="location.href='CLAN.html'">
-                                    CLAN
-                                </button>
-                            </li>
-                            <li>
                                 <button onclick="location.href='applogrammer.html'" id="applogrammer">
                                     applogrammer
                                 </button>
                             </li>
                             <li>
-                                <button onclick="location.href='BAMTOL.html'">
+                                <button onclick="location.href='CLAN.html'" id="CLAN">
+                                    CLAN
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='BAMTOL.html'" id="BAMTOL">
                                     BAMTOL
                                 </button>
                             </li>
                             <li>
-                                <button onclick="location.href='happy.html'">
+                                <button onclick="location.href='happy.html'" id="happy">
                                     happy
                                 </button>
                             </li>
                         </ul>
                         <ul class="sub-menu-group" id="games">
                             <li>
-                                <button onclick="location.href='retro-tower.html'">
+                                <button onclick="location.href='games/retro-tower.html'">
                                     Retro tower
                                 </button>
                             </li>
@@ -252,19 +235,7 @@
             </div>
         </header>
         <main>
-            <div >
-                <img id="pl" src="https://tr.rbxcdn.com/180DAY-a784f0e48b7e9cb4b5e1ab6dd355d390/256/256/Image/Webp/noFilter" alt="proto-log logo">
-                <h1>Retro tower</h1>
-                <a id="ap" href="https://www.roblox.com/games/125635215931063">Retro tower</a>
-                <p></p> <br> <p class = "bbbbb"><strong>Retro tower introdution</strong></p> <br> 
-
-                <p class = "bbbbb">Retro Tower는 옛날 게임의 감성과 클래식한 레트로 스타일을 담은 타워 오비(Obby) 게임입니다.</p>
-                <p class = "bbbbb">다양한 장애물을 뛰어넘고, 여러 스테이지를 통과하며 탑의 정상에 도전해 보세요!</p>
-                <p class = "bbbbb">과거의 향수를 느끼며 여러분만의 기록을 만들어 보세요.</p>
-                <p class = "bbbbb">지금 바로 Retro Tower에 도전하세요!</p> <br>
-
-                <p class = "bbbbb">Retro tower | TEAM proto-log</p>
-            </div>
+            <h1>CLAN</h1>
         </main>
     </body>
 </html>
