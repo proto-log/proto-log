@@ -162,6 +162,68 @@
                 width: 90px; 
                 margin-right: 5px;
             }
+            .profile {
+                width: 100%;
+                padding: 30px 20px;
+            }
+            .profile h1 {
+                font-size: 3rem;
+                margin-bottom: 20px;
+                text-shadow: 3px 3px #ff0dff;
+            }
+
+            .profile h2 {
+                color: #01f7fa;
+                font-size: 1.4rem;
+                margin-bottom: 15px;
+            }
+
+            .profile-description {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+
+            .profile-skills {
+                color: #ccc;
+                font-size: 0.95rem;
+            }
+            .profile-buttons {
+                margin-top: 30px;
+            }
+
+            .profile-buttons button {
+                padding: 15px 20px;
+                border: 2px solid #01f7fa;
+                background: transparent;
+                color: #01f7fa;
+                font-family: 'Press Start 2P';
+                font-size: 10px;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+
+            .profile-buttons button:hover {
+                background: #01f7fa;
+                color: #222;
+                box-shadow: 0 0 15px #01f7fa;
+            }
+            .profile-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .profile-buttons .about-button {
+                border-color: #ff0dff;
+                color: #ff0dff;
+            }
+
+            .profile-buttons .about-button:hover {
+                background: #ff0dff;
+                color: #222;
+                box-shadow: 0 0 15px #ff0dff;
+            }
         </style>
     </head>
     <body>
@@ -234,8 +296,31 @@
                 </div>
             </div>
         </header>
-        <main>
-            <h1>CLAN</h1>
+        <main id="main">
+            <div class="profile">
+
+                <h1>CLAN</h1>
+
+                <h2>UI DESINGNER</h2>
+
+                <p class="profile-description">
+                    Sub-Leader of TEAM proto-log
+                </p>
+
+                 <p class="profile-skills">
+                    Canvas
+                </p>
+
+                <div class="profile-buttons">
+                    <button onclick="location.href='../games.html'">
+                        VIEW PROJECTS
+                    </button>
+
+                    <button class="about-button">
+                        ABOUT ME
+                    </button>
+                </div>
+            </div>
         </main>
     </body>
 </html>
