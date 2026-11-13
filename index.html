@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proto-Log Home Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Glitch&display=swap');
             * {
@@ -110,7 +111,7 @@
                 width: 100%;
                 height: 100vh;
                 color: #fff;
-                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('proto-log.png') center center;
+                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('images/proto-log.png') center center;
                 background-size: cover;
                 display: flex;
                 justify-content: center;
@@ -177,6 +178,121 @@
             #games {
                 width: 90px; 
                 margin-right: 5px;
+            }
+            main button.mouse{
+                background-color:transparent;
+                border:none;
+                color:white;
+                font-size:2rem;
+                position:absolute;
+                bottom:1rem;
+                left:50%;
+                transform:translateX(-50%);
+                animation:upDown 1s ease-in-out infinite;
+                cursor:pointer;
+            }
+            section{
+                font-family: 'Press Start 2P';
+                padding: 5rem 0;
+            }
+            section .title{
+                margin-bottom: 3rem;
+            }
+            section .title h4{
+                font-size: 1.35rem;
+                color: #01f7fa;
+                position: relative;
+            }
+            section .title h2{
+                font-size: 3.5rem; 
+            }
+            section .title p{
+                font-size: 1.15rem;
+            }
+            section {
+                width: 100%;
+                height: 100vh;
+                color: #fff;
+                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('images/proto-log2.png') center center;
+                background-size: cover;
+            }
+            section::after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            section.p1 .p1-game{
+                width: 30%;
+                margin-right: 5%;
+                padding: 1rem 1rem 1.5rem 1rem;
+                float: left;
+                background-color: #000;
+                border: 1px solid #ccc;
+                margin-bottom: 3rem;
+                font-family: 'Press Start 2P';
+            }
+            section.p1 .p1-game:nth-child(3n){
+                margin-right: 0;
+            }
+            section.p1 .p1-game img{
+                width: 100%;
+                display: block;
+            }
+            section.p1 .p1-game strong{
+                color: #fff;
+                margin: 0.5rem 0;
+                display: block;
+            }
+            section.p1 .p1-game h3{
+                font-size: 1.75rem;
+                color: #fff;
+            }
+            #div {
+                border: 0px;
+            }
+            footer {
+                width: 100%;
+                height: 30vh;
+                color: #333;
+                background-color: #777;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            @keyframes upDown{
+                0%{
+                    bottom:1rem;
+                }
+                50%{
+                    bottom:1.5rem;
+                }
+                100%{
+                    bottom:1rem;
+                }}
+            .profile-buttons {
+                margin-top: 30px;
+            }
+            .profile-buttons button {
+                padding: 15px 20px;
+                border: 2px solid #01f7fa;
+                background: transparent;
+                color: #01f7fa;
+                font-family: 'Press Start 2P';
+                font-size: 10px;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+            .profile-buttons button:hover {
+                background: #01f7fa;
+                color: #222;
+                box-shadow: 0 0 15px #01f7fa;
+            }
+            .profile-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
             }
         </style>
     </head>
@@ -252,7 +368,7 @@
         </header>
         <main id="main">
             <div class="aaaaa">
-                <h2>Team</h4>
+                <h4>Team</h4>
                 <h4>Proto-Log</h4>
                 <br>
                 <p>We make cool games</p>
@@ -269,7 +385,50 @@
                 <a href="https://discord.com/invite/c6yCJsmTrs" target="_blank">
                     <img src="https://i.namu.wiki/i/1Hiv-mf3x_xkYU1kd6PRSAA9TZycl-A3h-HM--kersQF5fL6_fF2PmO8757fj9CqhXnmcy2lFaQkwToWTxtIHw.webp" alt="Discord logo" class="fa-brandsfa-youtube">
                 </a>
+                <button class="mouse"><i class="fa-solid fa-angle-down"></i></button>
             </div>
         </main>
+        <section id="p1" class="p1">
+            <div class="container" id="div">
+                <div class="title">
+                    <h2>Games by</h2>
+                    <h4>TEAM Proto-Log</h4>
+                </div>
+                <div class="portfolio-me">
+                    <button class="p1-game" onclick="location.href='games/retro-tower.html'">
+                        <img src="https://tr.rbxcdn.com/180DAY-a784f0e48b7e9cb4b5e1ab6dd355d390/256/256/Image/Webp/noFilter" alt="">
+                        <strong>Roblox</strong>
+                        <h3>RetroTower</h3>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>TEAM Proto-Log
+            <br>
+            TEAM proto-log | Roblox Game Development
+            <br>
+            [ game ]
+            <br> 
+            applogrammer | CLAN | BAMTOL | happy 
+            <br>
+            [ web ]
+            <br> 
+            ChickenMayo | applogrammer
+            <br>
+            <a href="https://www.youtube.com/@TEAMproto-log-official-channel" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@protolog0304" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.roblox.com/communities/760758979" target="_blank">
+                <i class="fa-brands fa-roblox-creator-studio"></i>
+            </a>
+            <a href="https://discord.com/invite/c6yCJsmTrs" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            </p>
+        </footer>
     </body>
 </html>

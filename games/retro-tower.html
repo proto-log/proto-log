@@ -144,7 +144,7 @@
                 width: 100%;
                 height: 100vh;
                 color: #fff;
-                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../proto-log1.png') center center;
+                background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../images/proto-log1.png') center center;
                 background-size: cover;
                 display: flex;
                 justify-content: center;
@@ -158,6 +158,7 @@
                 width: 200px;
                 height: 200px;
                 margin-bottom: 20px;
+                margin-top: 50px;
                 border: 2px solid #fff;
             }
             #ap {
@@ -178,6 +179,30 @@
             #games {
                 width: 90px; 
                 margin-right: 5px;
+            }
+            .profile-buttons {
+                margin-top: 30px;
+            }
+            .profile-buttons button {
+                padding: 15px 20px;
+                border: 2px solid #01f7fa;
+                background: transparent;
+                color: #01f7fa;
+                font-family: 'Press Start 2P';
+                font-size: 10px;
+                cursor: pointer;
+                transition: 0.2s;
+            }
+            .profile-buttons button:hover {
+                background: #01f7fa;
+                color: #222;
+                box-shadow: 0 0 15px #01f7fa;
+            }
+            .profile-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-wrap: wrap;
             }
         </style>
     </head>
@@ -252,10 +277,9 @@
             </div>
         </header>
         <main>
-            <div >
+            <div>
                 <img id="pl" src="https://tr.rbxcdn.com/180DAY-a784f0e48b7e9cb4b5e1ab6dd355d390/256/256/Image/Webp/noFilter" alt="proto-log logo">
                 <h1>Retro tower</h1>
-                <a id="ap" href="https://www.roblox.com/games/125635215931063">Retro tower</a>
                 <p></p> <br> <p class = "bbbbb"><strong>Retro tower introduction</strong></p> <br> 
 
                 <p class = "bbbbb">Retro Tower는 옛날 게임의 감성과 클래식한 레트로 스타일을 담은 타워 오비(Obby) 게임입니다.</p>
@@ -264,6 +288,11 @@
                 <p class = "bbbbb">지금 바로 Retro Tower에 도전하세요!</p> <br>
 
                 <p class = "bbbbb">Retro tower | TEAM proto-log</p>
+                <div class="profile-buttons">
+                    <button onclick="window.open('https:/\/www.roblox.com/games/125635215931063')">
+                        Play now
+                    </button>
+                </div>
             </div>
         </main>
     </body>
